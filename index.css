@@ -1,0 +1,59 @@
+body{
+    margin: 0%;
+    background-color: black;
+    color: white;
+
+}
+
+.head{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    align-items: center;
+    
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(228, 40, 40);
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("head_back.jpg");
+
+   
+    background-size: 700px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.booking{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.booking input{
+    background-color: rgb(25, 24, 24);
+    border: black;
+    color: white;
+    height: 30px;
+}
+.booking button{
+    background-color: rgba(41, 100, 236, 0.2);
+    height: 30px;
+    width: max-content;
+    
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    margin-left: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Booking-phase{
+    display: flex;
+
+}
+#card1{
+    
+}
