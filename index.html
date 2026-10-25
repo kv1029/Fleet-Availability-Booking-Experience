@@ -1,26 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAR RENTAL</title>
-    <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="./index.css" />
 </head>
+
 <body>
+
+    <!--
     <video autoplay muted loop playsinline id="bg-video">
         <source src="back.mp4" type="video/mp4">
     </video>
+    -->
+
     <header class="head">
-        
         <h1>CAR🚗SAATHI</h1>
         <h3><a href="#">Car Booking</a></h3>
-        <h3><a href="#">Live Car</a></h3>
-        <h3><a href="#">Live Status</a></h3>
-        <h3><a href="#">Return Space</a></h3>
-
+        <h3><a href="live-car.html">Live Car</a></h3>
+        <h3><a href="live-status.html">Live Status</a></h3>
+        <h3><a href="return.html">Return Space</a></h3>
     </header>
+
     <nav class="booking">
-        <input  type="text" id="input" placeholder="Enter The Car Name" required/>
+        <input type="text" id="input" placeholder="Enter The Car Name" required />
+
         <div id="car-type">
             <button type="submit">Sedan</button>
             <button type="submit">Sedan</button>
@@ -31,90 +38,210 @@
             <button type="submit">Sedan</button>
         </div>
     </nav>
-    <section class="Booking-phase">
-        <div id="card1">
-             <button type="submit" class="book-btn">Book</button>
-            <div id="card_inside">
-                <h3>Car Name- Swift</h3>
-                <h2>Car Type- Hatchback</h2>
-                <h2>Color- Pearl Arctic White</h2>
-                <h2>Seating Capacity- 5 Seater</h2>
-                <h2>Price- $2000/day</h2>
-            </div>
-        </div>
-        <div id="card1">
-             <button type="submit" class="book-btn">Book</button>
-            <div id="card_inside">
-                <h3>Car Name- Swift</h3>
-                <h2>Car Type- Hatchback</h2>
-                <h2>Color- Pearl Arctic White</h2>
-                <h2>Seating Capacity- 5 Seater</h2>
-                <h2>Price- $2000/day</h2>
-            </div>
-        </div>
-        <div id="card1">
-             <button type="submit" class="book-btn">Book</button>
-            <div id="card_inside">
 
-                <h3>Car Name- Swift</h3>
-                <h2>Car Type- Hatchback</h2>
-                <h2>Color- Pearl Arctic White</h2>
-                <h2>Seating Capacity- 5 Seater</h2>
-                <h2>Price- $2000/day</h2>
+    <section class="Booking-phase">
+
+        <!-- Alto -->
+        <div class="car-card" style="background-image:
+            linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.75)
+            ),
+            url('cars/alto.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;">
+
+            <button type="submit" class="book-btn" onclick="bookCar('Lort Alto', 2000)">Book</button>
+
+            <div class="card-inside">
+                <h2>Car Name- Lort Alto</h2>
+                <h3>Car Type- Hatchback</h3>
+                <h3>Color- Pearl Arctic White</h3>
+                <h3>Seating Capacity- 5 Seater</h3>
+                <h3>Price- $2000/day</h3>
             </div>
         </div>
-        
-        <div id="card1">
-             <button type="submit" class="book-btn">Book</button>
-            <div id="card_inside">
-                <h3>Car Name- Swift</h3>
-                <h2>Car Type- Hatchback</h2>
-                <h2>Color- Pearl Arctic White</h2>
-                <h2>Seating Capacity- 5 Seater</h2>
-                <h2>Price- $2000/day</h2>
+
+        <!-- Baleno -->
+        <div class="car-card" style="background-image:
+            linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.75)
+            ),
+            url('cars/baleno.avif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;">
+
+            <button type="submit" class="book-btn" onclick="bookCar('Baleno', 2000)">Book</button>
+
+            <div class="card-inside">
+                <h2>Car Name- Baleno</h2>
+                <h3>Car Type- Hatchback</h3>
+                <h3>Color- Pearl Arctic White</h3>
+                <h3>Seating Capacity- 5 Seater</h3>
+                <h3>Price- $2000/day</h3>
             </div>
         </div>
-        <div id="card1">
-             <button type="submit" class="book-btn">Book</button>
-            <div id="card_inside">
-                <h3>Car Name- Swift</h3>
-                <h2>Car Type- Hatchback</h2>
-                <h2>Color- Pearl Arctic White</h2>
-                <h2>Seating Capacity- 5 Seater</h2>
-                <h2>Price- $2000/day</h2>
+
+        <!-- Lamborghini -->
+        <div class="car-card" style="background-image:
+            linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.75)
+            ),
+            url('cars/lambo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;">
+
+            <button type="submit" class="book-btn" onclick="bookCar('Lamborgini', 2000)">Book</button>
+
+            <div class="card-inside">
+                <h2>Car Name- Lamborgini</h2>
+                <h3>Car Type- Hatchback</h3>
+                <h3>Color- Pearl Arctic White</h3>
+                <h3>Seating Capacity- 5 Seater</h3>
+                <h3>Price- $2000/day</h3>
             </div>
         </div>
-        <div id="card1">
-             <button type="submit" class="book-btn">Book</button>
-            <div id="card_inside">
-                <h3>Car Name- Swift</h3>
-                <h2>Car Type- Hatchback</h2>
-                <h2>Color- Pearl Arctic White</h2>
-                <h2>Seating Capacity- 5 Seater</h2>
-                <h2>Price- $2000/day</h2>
+
+        <!-- GTR -->
+        <div class="car-card" style="background-image:
+            linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.75)
+            ),
+            url('cars/porche.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;">
+
+            <button type="submit" class="book-btn" onclick="bookCar('GTR', 2000)">Book</button>
+
+            <div class="card-inside">
+                <h2>Car Name- GTR</h2>
+                <h3>Car Type- Hatchback</h3>
+                <h3>Color- Pearl Arctic White</h3>
+                <h3>Seating Capacity- 5 Seater</h3>
+                <h3>Price- $2000/day</h3>
             </div>
         </div>
-        <div id="card1">
-             <button type="submit" class="book-btn">Book</button>
-            <div id="card_inside">
-                <h3>Car Name- Swift</h3>
-                <h2>Car Type- Hatchback</h2>
-                <h2>Color- Pearl Arctic White</h2>
-                <h2>Seating Capacity- 5 Seater</h2>
-                <h2>Price- $2000/day</h2>
+
+        <!-- Thar -->
+        <div class="car-card" style="background-image:
+            linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.75)
+            ),
+            url('cars/thar.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;">
+
+            <button type="submit" class="book-btn" onclick="bookCar('Thar', 2000)">Book</button>
+
+            <div class="card-inside">
+                <h2>Car Name- Thar</h2>
+                <h3>Car Type- Hatchback</h3>
+                <h3>Color- Pearl Arctic White</h3>
+                <h3>Seating Capacity- 5 Seater</h3>
+                <h3>Price- $2000/day</h3>
             </div>
         </div>
-        <div id="card1">
-             <button type="submit" class="book-btn">Book</button>
-            <div id="card_inside">
-                <h3>Car Name- Swift</h3>
-                <h2>Car Type- Hatchback</h2>
-                <h2>Color- Pearl Arctic White</h2>
-                <h2>Seating Capacity- 5 Seater</h2>
-                <h2>Price- $2000/day</h2>
+
+        <!-- Porsche -->
+        <div class="car-card" style="background-image:
+            linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.75)
+            ),
+            url('cars/porche2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;">
+
+            <button type="submit" class="book-btn" onclick="bookCar('Porche', 2000)">Book</button>
+
+            <div class="card-inside">
+                <h2>Car Name- Porche</h2>
+                <h3>Car Type- Hatchback</h3>
+                <h3>Color- Pearl Arctic White</h3>
+                <h3>Seating Capacity- 5 Seater</h3>
+                <h3>Price- $2000/day</h3>
             </div>
         </div>
+
+        <!-- Mercedes -->
+        <div class="car-card" style="background-image:
+            linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.75)
+            ),
+            url('cars/merc.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;">
+
+            <button type="submit" class="book-btn" onclick="bookCar('Mercedes', 2000)">Book</button>
+
+            <div class="card-inside">
+                <h2>Car Name- Mercedes</h2>
+                <h3>Car Type- Hatchback</h3>
+                <h3>Color- Pearl Arctic White</h3>
+                <h3>Seating Capacity- 5 Seater</h3>
+                <h3>Price- $2000/day</h3>
+            </div>
+        </div>
+
+        <!-- BMW -->
+        <div class="car-card" style="background-image:
+            linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.75)
+            ),
+            url('cars/bmw.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;">
+
+            <button type="submit" class="book-btn" onclick="bookCar('BMW', 2000)">Book</button>
+
+            <div class="card-inside">
+                <h2>Car Name- BMW</h2>
+                <h3>Car Type- Hatchback</h3>
+                <h3>Color- Pearl Arctic White</h3>
+                <h3>Seating Capacity- 5 Seater</h3>
+                <h3>Price- $2000/day</h3>
+            </div>
+        </div>
+
     </section>
 
 </body>
+<script>
+function bookCar(carName, price) {
+    const confirmBooking = confirm(
+        "Car: " + carName +
+        "\nPrice: ₹" + price + "/day" +
+        "\n\nDo you want to book this car?"
+    );
+
+    if (confirmBooking) {
+        const bookingDetails = {
+            carName: carName,
+            price: price
+        };
+
+        sessionStorage.setItem(
+            "bookingDetails",
+            JSON.stringify(bookingDetails)
+        );
+
+        window.location.href = "purchase-order.html";
+    }
+}
+</script>
+
 </html>

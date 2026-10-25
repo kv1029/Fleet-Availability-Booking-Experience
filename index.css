@@ -49,13 +49,14 @@ a{
     border: black;
     color: white;
     height: 30px;
+    width: 300px;
 }
 .booking button{
-    background-color: rgba(41, 100, 236, 0.2);
+    background-color: rgba(41, 100, 236, 0.7);
     height: 30px;
     width: max-content;
     
-    color: white;
+    color: black;
     border-radius: 5px;
     border: 0px;
     margin-left: 10px;
@@ -69,16 +70,28 @@ a{
     margin-top: 20px;
 }
 
-#card1 {
+.car-card{
     width: 300px;
     height: 400px;
-    display: flex;
-    flex-direction: column;
     padding: 15px;
     box-sizing: border-box;
     border: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(4px);
+    border-radius: 12px;
+
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    
+    
+}
+.car-img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
 .book-btn {
@@ -89,15 +102,19 @@ a{
     border: none;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
+    border-radius: 5px;
 }
 
-#card_inside {
+.card-inside{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     flex: 1;
     font-size: 10px;
+
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 #card_inside * {
