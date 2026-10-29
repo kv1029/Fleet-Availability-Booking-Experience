@@ -8,8 +8,16 @@
     <title>CAR RENTAL</title>
     <link rel="stylesheet" href="./index.css" />
 </head>
+ 
 
 <body>
+    <div class="background" id="welcome">
+        <div id="head">
+            <h1 id="w1">Welcome To <b>Car🚗Saathi</b></h1>
+            <h2 id="w2">Press Open Now Button To Open</h2>
+            <button id="openBtn" >Open Now</button>
+        </div>
+    </div>
 
     <!--
     <video autoplay muted loop playsinline id="bg-video">
@@ -220,28 +228,6 @@
     </section>
 
 </body>
-<script>
-function bookCar(carName, price) {
-    const confirmBooking = confirm(
-        "Car: " + carName +
-        "\nPrice: ₹" + price + "/day" +
-        "\n\nDo you want to book this car?"
-    );
-
-    if (confirmBooking) {
-        const bookingDetails = {
-            carName: carName,
-            price: price
-        };
-
-        sessionStorage.setItem(
-            "bookingDetails",
-            JSON.stringify(bookingDetails)
-        );
-
-        window.location.href = "purchase-order.html";
-    }
-}
-</script>
+<script src="script.js"></script>
 
 </html>
