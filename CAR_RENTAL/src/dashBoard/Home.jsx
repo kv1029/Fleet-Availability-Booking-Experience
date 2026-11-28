@@ -44,7 +44,7 @@ export default function Home({ user }) {
 
   return (
     <div className="bg-slate-950 text-white">
-      {/* 1. HERO SECTION */}
+  
       <section
         className="relative min-h-[88vh] flex flex-col items-center justify-center px-6 py-16 text-center bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/images/hero-car.jpg')" }}
@@ -91,7 +91,6 @@ export default function Home({ user }) {
             )}
           </div>
 
-          {/* Quick Search Bar */}
           <form
             onSubmit={handleQuickSearch}
             className="mt-12 w-full max-w-3xl bg-slate-900/90 backdrop-blur-md border border-slate-800 p-4 rounded-2xl shadow-2xl grid grid-cols-1 md:grid-cols-3 gap-3 text-left"
@@ -129,7 +128,6 @@ export default function Home({ user }) {
         </div>
       </section>
 
-      {/* 2. STATS BAR */}
       <section className="border-y border-slate-800 bg-slate-900/50">
         <div className="max-w-6xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div>
@@ -151,7 +149,6 @@ export default function Home({ user }) {
         </div>
       </section>
 
-      {/* 3. FEATURED FLEET SECTION */}
       <section className="max-w-6xl mx-auto px-6 py-16">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
           <div>
@@ -201,7 +198,6 @@ export default function Home({ user }) {
         </div>
       </section>
 
-      {/* 4. HOW IT WORKS (DUAL ROLE) */}
       <section className="bg-slate-900/60 border-t border-slate-800 py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-xl mx-auto mb-12">
@@ -243,7 +239,6 @@ export default function Home({ user }) {
         </div>
       </section>
 
-      {/* 5. FOOTER */}
       <footer className="border-t border-slate-800 py-8 px-6 text-center text-sm text-slate-500">
         <p className="font-semibold text-slate-300">DriveFleet — Car Rental & Fleet Management System</p>
         <p className="mt-1">Built with React & Tailwind CSS</p>
